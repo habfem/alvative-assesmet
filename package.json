@@ -9,7 +9,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
-    "build": "babel src -d lib"
+    "build": "npm install"
   },
   "author": "Habeeb Mustapha M. O.",
   "license": "ISC",
