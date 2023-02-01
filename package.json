@@ -6,11 +6,12 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
-    "build": "cross-env NODE_ENV=development nodemon app"
+    "build": "babel src -d lib"
   },
   "author": "Habeeb Mustapha M. O.",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.20.1",
     "cross-env": "^7.0.3",
