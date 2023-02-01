@@ -91,7 +91,8 @@ app.get("/receipt/:id", async (req, res) => {
       if (!donor) {
         res.redirect("/error");
       }
-      res.render("success.pug", { donor });
+      res.redirect("/success")
+      //res.render("success.pug", { donor });
     })
     .catch((e) => {
       res.redirect("/error");
@@ -100,6 +101,10 @@ app.get("/receipt/:id", async (req, res) => {
 
 app.get("/error", (req, res) => {
   res.render("error.pug");
+});
+
+app.get("/success", (req, res) => {
+  res.render("success.pug");
 });
 
 app.listen(PORT, () => {
